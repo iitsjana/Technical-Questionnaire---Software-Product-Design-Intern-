@@ -29,30 +29,9 @@ The user management screen should allow administrators to perform the following 
     <ul> 
   <li> Enable or disable user</li>
   </ul> <br/>
-
-  <li>
-  Edit the data of existing users
-    <ul>
-    <li> Edit user name</li>
-    </ul>
-      <ul>
-    <li> Edit user email</li>
-    </ul>
-      <ul>
-    <li> Enable/Disable user</li>
-    </ul>
-      <ul>
-    <li> Edit user display name</li>
-    </ul>
-      <ul>
-    <li> Edit user phone number</li>
-    </ul>
-      <ul>
-    <li> Edit user roles</li>
-    </ul> <br/>
   
    <li>
-  Assign roles to user
+  Assign roles to user using Dropdown menu
   <ul>
   <li>Assign Guest</li>
   </ul>
@@ -70,8 +49,64 @@ The user management screen should allow administrators to perform the following 
   </ul>
 
   
+<!-- UI Components -->
+## UI Components
+
+The user management screen should contain the following UI components:
+<ol>
+    <li>
+    User List
+    
+* The User List displays a table of all users, showing their ID, username, email address, and whether the user is enabled or not in separate columns.
+* If user is enabled, the value of the Enabled box is "True"
+* Each colum can be filtered by the administrators.
+    
+<br/>
+
+<li>
+Create/Edit User Form ( When administrators click New User Button, the form pops up)
+    
+The Create/Edit User Form should contain the following fields:
+ * Input type text for Username 
+ * Input type text for Display Name 
+ * Input type number for Phone 
+ * Input type text for Email 
+ * Checkbox titled "Enabled" for enabling users
+ * Dropdown menu for User Roles
+
+  One User Role may be assigned to each user.
+  
+ The User Roles are:
+  <ul>
+  <li>Guest</li>
+  </ul>
+    <ul>
+  <li>Admin</li>
+  </ul>
+    <ul>
+  <li>SuperAdmin</li>
+  </ul><br/>
+  
+<li>
+Hide Disabled User checkbox. When clicked, disabled users are hidden for the users list.
+
+<li>
+Save User button. When clicked, a user's data is saved.
   
   
+<!-- Page Behavior-->
+## Page Behavior 
+
+### Inital Display - User List 
+When the page loads, the user list should display all users in the system. Administrators can click on the hide disabled user checkbox in order to view only the enabled users in the system. Administrators can click the Create new user button, a form should be displayed to fill in the new user's information.
+
+### Create New User Form
+When the new user form is displayed, the administrators can now fill in the form fileds with the user's information. The administrator may enable the user by clicking on the "Enable" checkbox. Additionally, the administrators may save the user created in the system by clicking the "Save User" button.
+
+
+
+
+ 
   
   
   
@@ -88,43 +123,3 @@ The user management screen should allow administrators to perform the following 
    
  
 
-    
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-
-
-
-* Change user status to either Enabled or Disabled user.
-** their emails, and whether or not the user is enabled or disabled.
-*	Create a new user.
-*	Edit an existing user.
-*	Delete a user.
-* Search for users by name or email address.
-
-UI Components
-The user management screen should contain the following UI components:
-User List
-The user list should display a table of all users, showing their name, email address, and role. Each row should also have buttons for editing and deleting the user.
-Create/Edit User Form
-The create/edit user form should contain the following fields:
-•	First name (required)
-•	Last name (required)
-•	Email address (required, unique)
-•	Password (required)
-•	Role (required)
-Search Bar
-The search bar should allow administrators to search for users by name or email address.
-Page Behavior
-User List
-When the page loads, the user list should display all users in the system. Administrators can click on the edit button to edit a user or the delete button to delete a user. When an administrator clicks the edit button, the create/edit user form should be displayed with the selected user's information pre-populated.
-Create/Edit User Form
-When the create/edit user form is displayed, the administrator can enter the user's information into the form fields. The administrator must fill out all required fields before submitting the form. If the email address entered is not unique, an error message should be displayed, and the form should not be submitted. If the form is successfully submitted, the user list should be updated with the new user or the edited user's information.
-Search Bar
-The search bar should allow administrators to search for users by name or email address. As the administrator types into the search bar, the user list should update to show only the users that match the search criteria.
-Initial Display
-When the user management screen is first displayed, the user list should show all users in the system. The create/edit user form and search bar should be hidden.
