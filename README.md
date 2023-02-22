@@ -1,17 +1,106 @@
 # User Management Screen
 
-This document is a user specification outline for the user management scree.
-This document outlines the user interface specification for the user management screen. This screen is used by administrators to manage the users of the application.
+This document is a user specification outline for the user management screen below:
 
-![alt text](http://url/to/img.png)
+![alt text](h.png)
+
+This screen is used by administrators to manage the users of the application.
 
 <!-- Requirements -->
-
 ## Requirements 
 
 The user management screen should allow administrators to perform the following tasks:
 
-*	View a list of all users.
+  <ol>
+    <li>
+     View a list of all users
+      <ul>
+        <li>Users can be viewed and sorted based on: ID, User Name, Email, or Enabled functionality</li>
+      </ul>
+            <ul>
+        <li>Hide disabled users</li>
+      </ul>
+    </li><br/>
+  <li>
+  Create new user
+  <ul>
+  <li> Fill the user's information: username, display name, phone number, user email, user role</li>
+  </ul>
+    <ul> 
+  <li> Enable or disable user</li>
+  </ul> <br/>
+
+  <li>
+  Edit the data of existing users
+    <ul>
+    <li> Edit user name</li>
+    </ul>
+      <ul>
+    <li> Edit user email</li>
+    </ul>
+      <ul>
+    <li> Enable/Disable user</li>
+    </ul>
+      <ul>
+    <li> Edit user display name</li>
+    </ul>
+      <ul>
+    <li> Edit user phone number</li>
+    </ul>
+      <ul>
+    <li> Edit user roles</li>
+    </ul> <br/>
+  
+   <li>
+  Assign roles to user
+  <ul>
+  <li>Assign Guest</li>
+  </ul>
+    <ul>
+  <li>Assign Admin</li>
+  </ul>
+    <ul>
+  <li>Assign SuperAdmin</li>
+  </ul> <br/>
+  
+ <li>
+  Save user
+  <ul>
+  <li>Save the user's data in the system's database</li>
+  </ul>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+   
+ 
+
+    
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+
+
+
+* Change user status to either Enabled or Disabled user.
+** their emails, and whether or not the user is enabled or disabled.
 *	Create a new user.
 *	Edit an existing user.
 *	Delete a user.
